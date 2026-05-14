@@ -30,3 +30,64 @@ button { padding: 10px
 20px; cursor: pointer; background: #3498db; color: white; border: none;
 
 border-radius: 5px; }
+
+/* Resposive */
+/* CSS cho màn hình máy tính (Mặc định) */
+.navbar {
+  background: #333;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 18px;
+}
+
+/* Ẩn nút 3 gạch trên máy tính */
+.checkbtn {
+  display: none;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+#check { display: none; }
+
+/* --- RESPONSIVE CHO ĐIỆN THOẠI --- */
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block; /* Hiện nút 3 gạch */
+  }
+
+  .navbar ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #444;
+    top: 80px;
+    left: -100%; /* Giấu menu sang trái màn hình */
+    text-align: center;
+    transition: all .5s;
+    flex-direction: column; /* Xếp menu thành hàng dọc */
+  }
+
+  .navbar ul li {
+    margin: 20px 0;
+  }
+
+  /* Khi nhấn vào nút 3 gạch, menu sẽ bay ra */
+  #check:checked ~ ul {
+    left: 0;
+  }
+}
