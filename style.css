@@ -1,0 +1,32 @@
+body { font-family: sans-serif; text-align: center; background: #222; color: #fff; }
+nav { background: #333; padding: 15px; margin-bottom: 20px; }
+nav a { color: #00ff00; text-decoration: none; margin: 0 15px; font-weight: bold; }
+nav a:hover { text-decoration: underline; }
+img { border: 5px solid #00ff00; border-radius: 10px; margin-top: 20px;}
+.btn-contact {
+    /* Quan trọng nhất: Giữ nút cố định tại một vị trí trên màn hình */
+    position: fixed;
+    bottom: 20px;  /* Cách mép dưới 20px */
+    right: 20px;   /* Cách mép phải 20px */
+    
+    /* Làm đẹp cho nút */
+    background-color: #00ff00; /* Màu xanh hacker */
+    color: black;
+    padding: 15px 20px;
+    border-radius: 50px; /* Bo tròn hoàn toàn nhìn như viên thuốc */
+    text-decoration: none; /* Bỏ gạch chân của thẻ a */
+    font-weight: bold;
+    box-shadow: 0 4px 15px rgba(0, 255, 0, 0.3); /* Đổ bóng cho nút trông như đang bay */
+    z-index: 9999; /* Đảm bảo nút luôn nằm ĐÈ lên mọi nội dung khác */
+    transition: 0.3s; /* Hiệu ứng mượt mà khi di chuyển chuột vào */
+}
+
+.btn-contact:hover {
+    transform: scale(1.1); /* Phóng to nhẹ khi chạm vào */
+    background-color: #ffffff;
+}
+button { padding: 10px
+
+20px; cursor: pointer; background: #3498db; color: white; border: none;
+
+border-radius: 5px; }
